@@ -22,6 +22,7 @@ gem 'letter_opener', group: :development
 
 # Heroku
 gem 'rails_12factor', group: :production
+gem 'newrelic_rpm'
 
 gem 'unicorn', group: :production
 gem 'thin', group: :development
