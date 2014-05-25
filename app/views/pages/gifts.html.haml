@@ -1,0 +1,48 @@
+.page-header
+  %h2.text-center Gifts
+
+.row
+  .col-md-12.text-center
+    %p.lead
+      Please help celebrate the unity of Jason and Leah by learning more about their values and passions. Jason and Leah have selected two local charities that express their commitment to community and their love for animals.
+
+    %p.lead
+      This is not a "traditional" registration but one that hopefully will offer loved ones and guests an understanding of the principles that have bonded Jason and Leah.
+
+    %p.lead
+      Jason and Leah are requesting that you make a donation to one or both of these charities.  Please follow the links below to learn more about each charity.
+
+.row
+  .col-md-6.text-center
+    %h2.text-primary.text-left Jason
+    = link_to 'http://athletesforanimals.org', target: :_blank do
+      .alert.alert-warning
+        = image_tag 'athletesforanimals.png', class: 'image-responsive'
+    %blockquote.text-left
+      %p Athletes for Animals is a united team of professional athletes with a shared passion for rescuing and protecting the welfare of homeless pets nationwide.
+      = link_to 'Visit Website', 'http://athletesforanimals.org', target: :_blank, class: 'btn btn-xs btn-primary'
+      = link_to 'Donate', 'http://athletesforanimals.org/support-us', target: :_blank, class: 'btn btn-xs btn-primary'
+
+  .col-md-6.text-center
+    %h2.text-primary.text-right Leah
+    = link_to 'http://tenthlifecats.org', target: :_blank do
+      .alert.alert-warning
+        = image_tag 'tenthlife.png', class: 'image-responsive'
+    %blockquote.pull-right
+      %p Tenth Life Cat Rescue saves stray cats and kittens in the St. Louis area, prioritizing those with special needs.
+      = link_to 'Visit Website', 'http://tenthlifecats.org', target: :_blank, class: 'btn btn-xs btn-primary'
+      = link_to 'Donate', 'http://tenthlifecats.org/donate', target: :_blank, class: 'btn btn-xs btn-primary'
+
+.row
+  .col-md-12.text-center
+    %h3
+      %span.label.label-default
+        We appreciate your generosity!
+
+.row
+  .col-md-12
+    %ul.pager
+      %li.previous
+        = link_to "&larr; Accommodations".html_safe, accommodations_path
+      %li.next.btn
+        = link_to "RSVP &rarr;".html_safe, rsvps_path

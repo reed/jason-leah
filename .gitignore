@@ -1,0 +1,23 @@
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+# /bin/*
+database.yml
+application.yml
+dropbox.yml
+.secret
+.rvmrc
+.powrc
+.DS_Store
+._.DS_Store
+# public/assets
+vendor/cache
+*.csv
+.sass-cache
+debug.js.coffee

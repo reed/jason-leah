@@ -1,0 +1,26 @@
+#menu.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %a.navbar-brand{href: "/"} 
+        = a_space 'Jason'
+        %i.fa.fa-heart
+        = p_space 'Leah'
+      %button.navbar-toggle{"data-target" => "#navbar-main", "data-toggle" => "collapse", type: "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    #navbar-main.navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li{class: ('active' if params[:action] == 'events')}
+          = link_to 'Events', events_path
+        %li{class: ('active' if params[:action] == 'directions')}
+          = link_to 'Directions', directions_path
+        %li{class: ('active' if params[:action] == 'activities')}
+          = link_to 'Activities', activities_path
+        %li{class: ('active' if params[:action] == 'accommodations')}
+          = link_to 'Accommodations', accommodations_path
+        %li{class: ('active' if params[:action] == 'gifts')}
+          = link_to 'Gifts', gifts_path
+        %li{class: ('active' if controller.controller_name == 'rsvp')}
+          = link_to 'RSVP', rsvps_path
+        

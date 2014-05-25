@@ -1,0 +1,68 @@
+.page-header
+  %h2.text-center Activities Between Events
+
+.row
+  .col-md-12
+    %p.lead
+      Harvest Festival will be in full swing in downtown Augusta on September 20, 2014. There will be arts, crafts, antiques, wineries all within walking distance of Ebenezer Church.
+
+.row
+  .col-md-6.text-center
+    .panel.panel-default
+      .panel-body
+        %h3 
+          Augusta Brewery
+        %h4
+          %small
+            %i an outdoor pub that serves local Augusta beer and food
+        %hr/
+        %address
+          109 West Main Street
+          %br/
+          Washington, MO 63090
+          %br/
+          %i.fa.fa-phone 
+          = p_space '636.239.5010'
+  
+  .col-md-6.text-center
+    .panel.panel-default
+      .panel-body
+        %h3 
+          Chandler Hill Winery
+        %h4
+          %small 
+            %i About halfway between Ebenezer and Strathalbyn. Great food and wines from Missouri, California, Oregon, and Washington.
+        %hr/
+        %address
+          596 Defiance Rd
+          %br/
+          Defiance, MO 63341
+          %br/
+          %i.fa.fa-phone 
+          = p_space '636.798.2675'
+
+.row
+  .col-md-6.col-md-offset-3.text-center
+    .panel.panel-default
+      .panel-body
+        %h3 
+          Johann's of Augusta
+        %h4
+          %small 
+            %i This is the only fueling station in the area- just down the street from the church.
+        %hr/
+        %address
+          225 Jackson St.
+          %br/
+          Augusta, MO 63332
+          %br/
+          %i.fa.fa-phone 
+          = p_space '636.228.4500'
+
+.row
+  .col-md-12
+    %ul.pager
+      %li.previous
+        = link_to "&larr; Directions".html_safe, directions_path
+      %li.next.btn
+        = link_to "Accommodations &rarr;".html_safe, accommodations_path

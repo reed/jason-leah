@@ -1,0 +1,9 @@
+.col-md-6.text-center
+  %h3.text-primary= name
+  %br/
+  .panel.panel-default
+    .panel-body
+      = Array(address).join('<br/>').html_safe
+      %br/
+      %i.fa.fa-phone 
+      = p_space phone

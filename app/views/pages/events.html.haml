@@ -1,0 +1,104 @@
+.page-header
+  %h2.text-center Events
+
+.row
+  .col-md-6.text-center
+    %h1.text-primary Wedding
+    %h5.text-info
+      %i.fa.fa-clock-o
+      = p_space '2:30 PM'
+    %br/
+    .panel.panel-default
+      .panel-body
+        %h3 
+          Ebenezer United Church of Christ
+        %hr/
+        %address
+          5541 Walnut St. 
+          %br/
+          Augusta, MO 63332
+          %br/
+          %i.fa.fa-phone 
+          = p_space '636.228.4831'
+
+  .col-md-6.text-center
+    %h1.text-primary Reception
+    %h5.text-info
+      %i.fa.fa-clock-o
+      = p_space '5:30 PM - 9:30 PM'
+    %br/
+    .panel.panel-default
+      .panel-body
+        %h3
+          Strathalbyn Farms
+        %hr/
+        %address
+          552 Wolfrum Rd.
+          %br/
+          Weldon Spring, MO 63304
+          %br/
+          %i.fa.fa-phone
+          = p_space '636.441.1281'
+
+.page-header          
+  %h3.text-center Important Details
+
+.row
+  .col-md-12
+    .row
+      .col-md-6.text-center
+        %span.fa-stack.fa-lg
+          %i.fa.fa-circle.fa-stack-2x.text-muted
+          %i.fa.fa-flag.fa-stack-1x.text-warning
+        %br/
+        %br/
+        .panel
+          .panel-body.text-warning
+            Please keep the little ones at home. The ceremony and reception are mature events. 
+
+      .col-md-6.text-center
+        %span.fa-stack.fa-lg
+          %i.fa.fa-circle.fa-stack-2x.text-muted
+          %i.fa.fa-flag.fa-stack-1x.text-warning
+        %br/
+        %br/
+        .panel
+          .panel-body.text-warning
+            Please dress appropriately-no denim, no baseball hats, etc.
+            
+    .row
+      .col-md-4.text-center
+        %span.fa-stack.fa-lg
+          %i.fa.fa-circle.fa-stack-2x.text-muted
+          %i.fa.fa-flag.fa-stack-1x.text-warning
+        %br/
+        %br/
+        .panel
+          .panel-body.text-warning
+            Harvest Festival is the same weekend as the wedding-this means the small town of Augusta will be very busy. Please give yourself plenty of time to find parking.
+
+      .col-md-4.text-center
+        %span.fa-stack.fa-lg
+          %i.fa.fa-circle.fa-stack-2x.text-muted
+          %i.fa.fa-flag.fa-stack-1x.text-warning
+        %br/
+        %br/
+        .panel
+          .panel-body.text-warning
+            Parking at Ebenezer is limited. There is a school parking lot behind the church and street parking. We are holding 2 handicap spots for designated people. If there is someone in your group who needs this amenity, please let us know upon RSVP.
+
+      .col-md-4.text-center
+        %span.fa-stack.fa-lg
+          %i.fa.fa-circle.fa-stack-2x.text-muted
+          %i.fa.fa-flag.fa-stack-1x.text-warning
+        %br/
+        %br/
+        .panel
+          .panel-body.text-warning
+            Deer are very prevalent in this area, especially at nightfall. Please be careful!
+
+.row
+  .col-md-12
+    %ul.pager
+      %li.next.btn
+        = link_to "Directions &rarr;".html_safe, directions_path

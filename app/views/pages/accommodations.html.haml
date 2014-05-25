@@ -1,0 +1,26 @@
+.page-header
+  %h2.text-center Lodging
+
+.row
+  = render partial: 'accommodation', locals: { name: 'H S Clay House Bed and Breakfast', address: ['219 Public St.', 'Augusta, MO 63332'], phone: '314.504.4203' }
+  = render partial: 'accommodation', locals: { name: 'The Lindenhof Bed and Breakfast', address: ['5596 Walnut St.', 'Augusta, MO 63332'], phone: '636.228.4617' }
+          
+.row
+  = render partial: 'accommodation', locals: { name: 'Augusta Wine Country Inn Bed and Breakfast', address: ['5619 5th St.', 'Augusta, MO 63332'], phone: '636.482.4307' }
+  = render partial: 'accommodation', locals: { name: 'Grapevine Vacation Rentals', address: ['2886 S. Hwy 94', 'Defiance, MO 63341'], phone: '636.698.2163' }
+  
+.row
+  = render partial: 'accommodation', locals: { name: "Residence Inn St. Louis O'Fallon", address: ['101 Progress Point Ct', "O'Fallon, MO"], phone: '636.300.3535' }
+  = render partial: 'accommodation', locals: { name: 'Comfort Inn & Suites', address: ['18375 Chesterfield Airport Rd', 'Chesterfield, MO'], phone: '636.530.1200' }
+
+.row
+  = render partial: 'accommodation', locals: { name: "Staybridge Suites O'Fallon/Chesterfield", address: ['1155 Technology Dr.', "O'Fallon, MO"], phone: '636.300.0999' }
+  = render partial: 'accommodation', locals: { name: 'Hampton Inn & Suites St. Louis/Chesterfield', address: ['5 McBride and Son Center Dr.', 'Chesterfield, MO'], phone: '636.530.0770' }
+
+.row
+  .col-md-12
+    %ul.pager
+      %li.previous
+        = link_to "&larr; Activities".html_safe, activities_path
+      %li.next.btn
+        = link_to "Gifts &rarr;".html_safe, gifts_path

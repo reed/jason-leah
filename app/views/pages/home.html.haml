@@ -1,0 +1,27 @@
+%header#banner
+  .container
+    .row
+      .col-md-6.col-sm-12.text-center
+        %h1 
+          Jason
+          %small>< & 
+          Leah
+        %h3<
+          September 20
+          %sup>< th
+          , 2014
+        %br/
+        %ul.list-unstyled.text-center#landing-menu
+          %li
+            = link_to 'Events', events_path, class: 'btn btn-sm btn-default'
+          %li
+            = link_to 'Directions', directions_path, class: 'btn btn-sm btn-default'
+          %li
+            = link_to 'Activities', activities_path, class: 'btn btn-sm btn-default'
+          %li
+            = link_to 'Accommodations', accommodations_path, class: 'btn btn-sm btn-default'
+          %li
+            = link_to 'Gifts', gifts_path, class: 'btn btn-sm btn-default'
+          %li
+            = link_to 'RSVP!', rsvps_path, class: 'btn btn-sm btn-default'
+      .pull-right#landing-couple-photo.hidden-xs.hidden-sm

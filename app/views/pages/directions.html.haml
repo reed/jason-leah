@@ -1,0 +1,95 @@
+.page-header
+  %h2.text-center Directions
+
+.row
+  .col-md-6
+    %h3 
+      To 
+      %span.text-primary= p_space a_space('Ebenezer') 
+      from 
+      %span.text-primary= p_space a_space('St. Louis')
+      %br/
+      %small.text-muted (approximately 1 hour 15 minutes)
+
+    %ul.fa-ul
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        I-64/40 west
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Take exit 10, at MO-94
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a left on 94
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a left on Jackson
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a left on Locust
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        There is parking behind and in front of the church, between Public St. and Jefferson St.
+
+  .col-md-6
+    %h3
+      To 
+      %span.text-primary= p_space a_space('Strathalbyn')
+      from
+      %span.text-primary= p_space a_space('Ebenezer')
+      %br/
+      %small.text-muted (approximately 40 minutes)
+
+    %ul.fa-ul
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Drive towards Jackson St.
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a right on Jackson
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a right on 94
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Take I-64/40 East (one exit)
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Take exit 11 Research Park Circle
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a left on Research Park Circle
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a right on Technology Drive (this turns into Old Wolfrum Rd.)
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Make a left on Wolfrum Rd.
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        When you arrive at Wolfrum Rd., Strathalbyn Rd (gravel road) will be straight ahead.
+
+      %li
+        %i.fa.fa-li.fa-chevron-circle-right
+        Continue on gravel road to clubhouse
+
+.row
+  .col-md-12
+    %ul.pager
+      %li.previous
+        = link_to "&larr; Events".html_safe, events_path
+      %li.next.btn
+        = link_to "Activities &rarr;".html_safe, activities_path

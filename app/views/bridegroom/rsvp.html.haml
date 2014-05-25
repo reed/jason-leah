@@ -1,0 +1,28 @@
+%h1 RSVP
+
+%table{style: 'width: 100%;'}
+  %tr
+    %th{style: 'text-align: left;'} Email Address
+    %td= @rsvp.email
+
+  %tr
+    %th{style: 'text-align: left;'} Guests
+    %td= @rsvp.guests.join('<br />').html_safe
+
+  %tr
+    %th{style: 'text-align: left;'} Comments / Questions / Dietary Restrictions
+    %td= @rsvp.restrictions.blank? ? 'None' : @rsvp.restrictions
+
+
+%h2 Overall Guest List (to date)
+  
+%h4= "RSVPs: #{Rsvp.count}"
+%h4= "Guests (#{Rsvp.guest_count})"
+
+%ul
+  - Rsvp.pluck(:guests).each do |guest|
+    %li= guest[0]
+    - if guest.size > 1
+      %ul
+        - guest[1..-1].each do |sub_guest|
+          %li= sub_guest 
