@@ -5,7 +5,7 @@
         = a_space 'Jason'
         %i.fa.fa-heart
         = p_space 'Leah'
-      %button.navbar-toggle{"data-target" => "#navbar-main", "data-toggle" => "collapse", type: "button"}
+      %button.navbar-toggle{type: 'button', data: {target: "#navbar-main", toggle: 'collapse'}}
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
@@ -22,5 +22,5 @@
         %li{class: ('active' if params[:action] == 'gifts')}
           = link_to 'Gifts', gifts_path
         %li{class: ('active' if controller.controller_name == 'rsvp')}
-          = link_to 'RSVP', rsvps_path
+          = link_to 'RSVP!', rsvps_path
         

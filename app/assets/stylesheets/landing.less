@@ -1,26 +1,82 @@
-#landing-couple-photo {
-  height: 100%;
-  width: 50%;
-  background: transparent image-url('jasonandleah.png') 50% 0 no-repeat scroll;
-  background-size: auto 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.background-size(@size){
+  background-size: @size;
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -o-background-size: @size;
 }
-#landing-menu {
-  li {
-    padding: 5px;
-    a {
-      background-color: transparent;
-      border: 1px solid transparent;
-      font-family: 'Amatic SC';
-      font-size: 1.4em;
-      color: #2B3E50;
-      font-weight: bold;
-      transition: all 0.5s linear;
-      &:hover {
-        border: 1px solid rgba(223, 105, 26, 0.75);
-        color: rgba(223, 105, 26, 0.75);
+
+@media (min-width: 980px){
+  #landing-banner {
+    background: transparent image-url('stone-steps2.jpg') 0 0 repeat-x scroll;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 979px){
+  body[data-action="home"] {
+    position: relative;
+  }
+  #landing-banner {
+    background: transparent image-url('stone-steps.jpg') 0 0 repeat-x scroll !important;
+    padding-bottom: 0px !important;
+  }
+  #landing-couple-photo {
+    background-image: none !important;
+    height: 300px !important;
+    position: relative !important;
+  }
+  #landing-couple-photo-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 50;
+    background: transparent image-url('jasonandleah.png') 50% 0 no-repeat scroll !important;
+    .background-size(auto 100%) !important;
+  }
+}
+#landing-banner {
+  background: transparent image-url('stone-steps2.jpg') 0 0 repeat-x scroll;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #4e5d6c;
+  position: relative;
+  h1 {
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 60px;
+    small {
+      color: #4e5d6c;
+      margin: auto 5px;
+      font-size: 50%;
+    }
+  }
+  h3 {
+    font-family: 'La Belle Aurore';
+  }
+  #landing-couple-photo {
+    height: 100%;
+    background: transparent image-url('jasonandleah.png') 50% bottom no-repeat scroll;
+    .background-size(contain);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #landing-menu {
+    li {
+      padding: 5px;
+      a {
+        background-color: transparent;
+        border: 1px solid transparent;
+        font-family: 'Amatic SC';
+        font-size: 1.4em;
+        color: #2B3E50;
+        font-weight: bold;
+        transition: all 0.5s linear;
+        &:hover {
+          border: 1px solid rgba(223, 105, 26, 0.75);
+          color: rgba(223, 105, 26, 0.75);
+        }
       }
     }
   }

@@ -5,8 +5,10 @@ $ ->
   $(document).on 'page:load', initPage
 
 initPage = ->
+  $(window).off('resize', initLandingPageHeight)
   if pageIs 'pages', 'home'
     initLandingPageHeight()
+    $(window).on 'resize', initLandingPageHeight
   else
     initMenuColorChanger() unless bound
 
@@ -24,9 +26,8 @@ initMenuColorChanger = ->
   bound = true
 
 initLandingPageHeight = ->
+  $('#landing-banner').css 'minHeight', 'auto'
   windowHeight = $(window).height()
   contentHeight = $('body').height()
-  console.log "window height: ", windowHeight
-  console.log 'content height: ', contentHeight
   if windowHeight > contentHeight
-    $('#banner').css 'minHeight', windowHeight
+    $('#landing-banner').css 'minHeight', windowHeight
