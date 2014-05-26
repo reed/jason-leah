@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: jasonandleah_development
+
+test:
+  <<: *default
+  database: jasonandleah_test
+
+production:
+  <<: *default
+  database: jasonandleah_development
